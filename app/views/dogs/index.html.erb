@@ -1,0 +1,8 @@
+<h1>Dunder Dogs!!!!</h1>
+<%= link_to "Sort",  dogs_path(banana: true) %>
+
+<ul>
+<%  @dogs.each do |dog| %>
+  <li>  <%= link_to dog.name, dog %> <span>I have this many humans: <%= dog.employees.count %></span></li>
+<% end %>
+</ul>

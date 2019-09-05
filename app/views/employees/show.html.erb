@@ -1,0 +1,12 @@
+
+<img src=<%= @employee.img_url %> style="width: 250px" />
+
+<%= button_to "Destroy Employee", @employee , method: :delete %>
+
+<h1> <%= @employee.full_name %> </h1>
+
+<p><%= @employee.alias %> </p>
+<p><%= @employee.title %> </p>
+<p><%= @employee.office %> </p>
+<p><%= @employee.dog.name %> </p>
+
